@@ -1,0 +1,28 @@
+{
+  // Formatting
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true,
+  "editor.formatOnPaste": true,
+  "prettier.requireConfig": true,
+
+  // Linting on save
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "explicit"
+  },
+
+  // Make sure ESLint runs on both JS & TS files
+  "eslint.validate": ["javascript", "typescript"],
+
+  // Inline suggestions (newer VS Code AI helper)
+  "editor.inlineSuggest.enabled": true,
+
+  // Quick string completions
+  "editor.quickSuggestions": {
+    "strings": true
+  },
+
+  // Ensure consistent line endings and trim whitespace
+  "files.eol": "\n",
+  "files.trimTrailingWhitespace": true,
+  "files.insertFinalNewline": true
+}

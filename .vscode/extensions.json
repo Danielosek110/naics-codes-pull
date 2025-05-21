@@ -1,0 +1,29 @@
+// .vscode/extensions.json
+{
+  "recommendations": [
+    // --- Formatting & Linting ---
+    "esbenp.prettier-vscode", // Prettier formatter
+    "dbaeumer.vscode-eslint", // ESLint support
+    "DavidAnson.vscode-markdownlint", // Markdown linting
+    "shd101wyy.markdown-preview-enhanced", // Enhanced Markdown preview
+
+    // --- Autocomplete & IntelliSense ---
+    "christian-kohler.path-intellisense", // Smart import paths (supports @/ alias)
+    "christian-kohler.npm-intellisense", // Auto-complete npm module names
+    "editorconfig.editorconfig", // Respect .editorconfig settings
+    "mikestead.dotenv", // .env file syntax highlighting
+
+    // --- Git & History ---
+    "eamodio.gitlens", // GitLens for code authorship & history
+
+    // --- CSV Editing ---
+    "janisdd.vscode-edit-csv", // Edit CSV files in table view
+    "mechatroner.rainbow-csv", // Colorize CSV files
+
+    // --- Code Visualization ---
+    "oderwat.indent-rainbow", // Indentation highlighting
+    "2gua.rainbow-brackets", // Rainbow brackets
+    "anseki.vscode-color",
+    "formulahendry.auto-rename-tag" // Color highlighting
+  ]
+}

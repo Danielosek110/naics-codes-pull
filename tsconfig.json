@@ -1,0 +1,34 @@
+{
+  "compilerOptions": {
+    /* latest JS, ESM modules per Node */
+    "target": "ESNext",
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
+
+    /* allow JS/JSON imports alongside TS */
+    "allowJs": true,
+    "resolveJsonModule": true,
+
+    /* path alias */
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["src/*"]
+    },
+
+    /* input/output dirs */
+    "rootDir": ".",
+    "outDir": "dist",
+
+    /* type checking & interop */
+    "strict": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "skipLibCheck": true,
+
+    /* speed & debugging */
+    "incremental": true,
+    "sourceMap": true
+  },
+  "include": ["src/**/*"],
+  "exclude": ["node_modules", "dist", ".eslintrc.mjs"]
+}
