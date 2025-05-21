@@ -17,16 +17,18 @@
     "format": "prettier --write \"**/*.{ts,js,json,md}\"",
     "check-format": "prettier --check \"**/*.{ts,js,json,md}\""
   },
-  "dependencies": {},
+  "dependencies": {
+    "naics": "^1.2.1"
+  },
   "devDependencies": {
     "@types/node": "^22.15.3",
-    "ts-node": "^10.0.0",
-    "typescript": "^5.0.0",
-    "eslint": "^9.0.0",
-    "@typescript-eslint/parser": "^6.0.0",
     "@typescript-eslint/eslint-plugin": "^6.0.0",
+    "@typescript-eslint/parser": "^6.0.0",
+    "eslint": "^9.0.0",
     "eslint-config-prettier": "^10.0.0",
-    "prettier": "^3.0.0"
+    "prettier": "^3.0.0",
+    "ts-node": "^10.0.0",
+    "typescript": "^5.0.0"
   },
   "packageManager": "yarn@1.22.22"
 }

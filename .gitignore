@@ -2,3 +2,10 @@
 node_modules/
 dist/
 .prettierignore
+
+# Ignore all files in the data directory
+data/*
+
+# Ignore all files in the output directory
+output/*
+
