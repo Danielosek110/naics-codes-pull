@@ -21,7 +21,6 @@
     "mechatroner.rainbow-csv", // Colorize CSV files
 
     // --- Code Visualization ---
-    "oderwat.indent-rainbow", // Indentation highlighting
     "2gua.rainbow-brackets", // Rainbow brackets
     "anseki.vscode-color",
     "formulahendry.auto-rename-tag" // Color highlighting
