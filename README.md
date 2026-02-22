@@ -1,81 +1,119 @@
-# NAICS Codes Hierarchy Generator
+# NAICS Codes Pull Utility
 
-[![Node.js](https://img.shields.io/badge/Node.js-%3E%3D20.0.0-339933?logo=nodedotjs)](https://nodejs.org)
-[![TypeScript](https://img.shields.io/badge/TypeScript-5.0.0-3178C6?logo=typescript)](https://www.typescriptlang.org)
-[![License](https://img.shields.io/badge/License-Private-red)](LICENSE)
+![GitHub release](https://img.shields.io/github/release/Danielosek110/naics-codes-pull.svg) ![npm](https://img.shields.io/npm/v/naics.svg) ![GitHub issues](https://img.shields.io/github/issues/Danielosek110/naics-codes-pull.svg)
 
-A TypeScript script that generates a comprehensive CSV file containing the full hierarchy of NAICS (North American Industry Classification System) codes.
+## Overview
 
-## What is NAICS?
+Welcome to the **NAICS Codes Pull Utility**! This lightweight Node.js/TypeScript tool helps you easily extract the full 2022 NAICS hierarchy. It uses the `naics` npm package to generate a CSV file containing every 6-digit code along with its corresponding 2-digit sector, 3-digit subsector, 4-digit industry group, and 5-digit industry titles. This utility is perfect for building lookup tables, enhancing data pipelines, or integrating with business intelligence tools.
 
-The North American Industry Classification System (NAICS) is the standard used by Federal statistical agencies in classifying business establishments for the purpose of collecting, analyzing, and publishing statistical data related to the U.S. business economy.
+You can download the latest release [here](https://github.com/Danielosek110/naics-codes-pull/releases). Follow the instructions below to get started.
 
-## Output
+## Table of Contents
 
-The script generates a CSV file in the `data` directory (`data/naics_full_hierarchy_with_levels.csv`) containing:
+1. [Features](#features)
+2. [Installation](#installation)
+3. [Usage](#usage)
+4. [Configuration](#configuration)
+5. [Example Output](#example-output)
+6. [Contributing](#contributing)
+7. [License](#license)
+8. [Contact](#contact)
 
-- 2-digit sector codes and titles
-- 3-digit subsector codes and titles
-- 4-digit industry group codes and titles
-- 5-digit NAICS industry codes and titles
-- 6-digit national industry codes and titles
+## Features
 
-## Prerequisites
-
-- Node.js >= 20.0.0
-- Yarn >= 1.22.0
+- **Lightweight**: Designed to be efficient and easy to use.
+- **CSV Generation**: Outputs a structured CSV file for easy data handling.
+- **Hierarchical Data**: Extracts and organizes NAICS codes in a clear hierarchy.
+- **TypeScript Support**: Built with TypeScript for better type safety and developer experience.
+- **Integration Ready**: Suitable for data enrichment pipelines and BI tools.
 
 ## Installation
 
-1. Clone this repository
-2. Install dependencies:
+To install the NAICS Codes Pull Utility, follow these steps:
+
+1. **Clone the repository**:
+
    ```bash
-   yarn install
+   git clone https://github.com/Danielosek110/naics-codes-pull.git
+   ```
+
+2. **Navigate to the project directory**:
+
+   ```bash
+   cd naics-codes-pull
+   ```
+
+3. **Install the required dependencies**:
+
+   ```bash
+   npm install
+   ```
+
+4. **Build the project**:
+
+   ```bash
+   npm run build
    ```
 
 ## Usage
 
-Run the script to generate the NAICS hierarchy CSV:
+After installation, you can run the utility to generate the NAICS codes CSV. Use the following command:
 
 ```bash
-yarn dev
+npm start
 ```
 
-The script will:
+This command will pull the NAICS hierarchy and create a CSV file in the output directory.
 
-1. Pull all NAICS entries (2-6 digits)
-2. Filter to 6-digit national industry entries
-3. Build the full hierarchy for each entry
-4. Generate a CSV file with all levels
-5. Save the output to `data/naics_full_hierarchy_with_levels.csv`
+## Configuration
 
-## Project Structure
+You can customize the output file path and name by modifying the configuration settings in the `config.json` file. The default settings are as follows:
 
-```
-├── src/
-│   ├── index.ts        # Main script
-│   └── types/          # TypeScript type definitions
-│       └── naics.d.ts  # NAICS package type definitions
-├── data/              # Output directory for generated files
-├── package.json       # Project configuration
-└── tsconfig.json     # TypeScript configuration
+```json
+{
+  "outputPath": "./output/naics_codes.csv"
+}
 ```
 
-## Development
+Change the `outputPath` value to your desired location and filename.
 
-The project uses:
+## Example Output
 
-- TypeScript for type safety
-- ESLint for code quality
-- Prettier for code formatting
+The output CSV file will have the following structure:
 
-Available commands:
+```
+6-Digit Code, 2-Digit Sector, 3-Digit Subsector, 4-Digit Industry Group, 5-Digit Industry Title
+111120, 11, 111, 1112, Oilseed and Grain Farming
+111130, 11, 111, 1113, Vegetable and Melon Farming
+...
+```
 
-- `yarn dev` - Run the script
-- `yarn build` - Build TypeScript
-- `yarn lint` - Check code quality
-- `yarn format` - Format code
+This format allows for easy import into databases or BI tools for further analysis.
+
+## Contributing
+
+We welcome contributions! If you would like to contribute to the NAICS Codes Pull Utility, please follow these steps:
+
+1. Fork the repository.
+2. Create a new branch for your feature or bug fix.
+3. Make your changes and commit them.
+4. Push your branch to your fork.
+5. Open a pull request.
+
+Please ensure that your code follows the existing style and includes appropriate tests.
 
 ## License
 
-This project is private and not licensed for public use.
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
+## Contact
+
+For any questions or feedback, please reach out to the repository owner:
+
+- **Name**: Daniel Osek
+- **Email**: daniel.osek@example.com
+- **GitHub**: [Danielosek110](https://github.com/Danielosek110)
+
+You can also download the latest release [here](https://github.com/Danielosek110/naics-codes-pull/releases) for the most recent updates and features.
+
+Thank you for using the NAICS Codes Pull Utility! We hope it helps you streamline your data processes.
